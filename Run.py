@@ -256,7 +256,7 @@ for tt in range(3):
                 args.horizon = hh
                 args.window = 6
 
-            ##############变化######################################
+            ####################################################
             args.seq_len = args.interval * args.lag  # 144
             args.pred_len = args.window * args.horizon  # 18
             args.noise_ratio = noise_ratio
