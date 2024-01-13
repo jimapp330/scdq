@@ -372,9 +372,6 @@ for tt in range(3):
                     
                     pd.DataFrame(np.concatenate([wind_true.reshape(-1, 1), wind_pred.reshape(-1, 1)], axis=1),
                                  columns=['true', 'pred']).to_csv(f'./results/{path}/scsq_{dataset}_true_pred.csv')
-                    wind_pred[:, :1] = wind_pred[:, :1] / 2
-                   
-
 
 
                 del quality, model
